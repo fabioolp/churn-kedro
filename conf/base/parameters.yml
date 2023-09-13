@@ -1,0 +1,13 @@
+columns_to_drop: ['RowNumber', 'CustomerId', 'Surname']
+features_cont_list: ['CreditScore', 'Balance', 'Age', 'NumOfProducts', 'EstimatedSalary', 'Tenure']
+
+fe_ratio_list: [salary_per_age, creditScore_per_products, creditScore_per_salary]
+
+fe_ratio:
+  salary_per_age: ['Salary_per_Age', 'EstimatedSalary', 'Age']
+  creditScore_per_products: [CreditScore_per_Products, CreditScore, NumOfProducts]
+  creditScore_per_salary: [CreditScore_per_Salary, CreditScore, EstimatedSalary]
+
+new_features_cont_list: ['Salary_per_Age', 'CreditScore_per_Products', 'CreditScore_per_Salary']
+
+rf_parameters: {'criterion': 'gini', 'max_depth': 8, 'max_features': 'log2', 'n_estimators': 200}
