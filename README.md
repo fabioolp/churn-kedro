@@ -21,3 +21,9 @@ O objetivo é construir um pipeline de Machine Learning que permita prever essa 
 - Tendo utilizado o Kedro, é garantida a boa organização do código, sua reprodutibilidade e capacidade de predição.
 
 O resultado final do modelo em arquivo com as colunas 'rowNumber' e 'predictedValues' é gerado no fluxo do pipeline ou manualmente pelos notebooks. E está armazenado na pasta 'data/08_reporting'.
+
+## Diagrama
+
+Os pipelines implementados estão representados nesse diagrama:
+
+![docs/diagram.png](docs/diagram.png)
