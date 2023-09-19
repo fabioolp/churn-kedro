@@ -13,7 +13,7 @@ def create_pipeline(**kwargs):
         [
             node(
                 func=ds_preprocessing_data,
-                inputs=["abandono_clientes", "params:columns_to_drop"],
+                inputs=["database_train", "params:columns_to_drop"],
                 outputs=["X", "y"],
                 name="ds_preprocessing_data",
             ),

@@ -3,13 +3,13 @@
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://docs.kedro.org/en/stable/data/data_catalog.html
 
-abandono_clientes:
+database_train:
   type: pandas.CSVDataSet
-  filepath: data/01_raw/Abandono_clientes.csv
+  filepath: data/01_raw/database_train.csv
 
-abandono_teste:
+database_test:
   type: pandas.CSVDataSet
-  filepath: data/01_raw/Abandono_teste.csv
+  filepath: data/01_raw/database_test.csv
   load_args:
     sep: ;
 

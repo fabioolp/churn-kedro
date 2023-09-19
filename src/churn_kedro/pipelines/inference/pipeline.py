@@ -13,7 +13,7 @@ def create_pipeline(**kwargs):
         [
             node(
                 func=preprocessing_data,
-                inputs=["abandono_teste", "params:columns_to_drop"],
+                inputs=["database_test", "params:columns_to_drop"],
                 outputs="df_pre",
                 name="preprocessing_data",
             ), 
@@ -25,7 +25,7 @@ def create_pipeline(**kwargs):
             ), 
             node(
                 func=prediction,
-                inputs=["rf_model", "abandono_teste", "fe_data"],
+                inputs=["rf_model", "database_test", "fe_data"],
                 outputs="predicted_data",
                 name="prediction_node",
             ),

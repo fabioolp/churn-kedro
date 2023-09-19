@@ -8,9 +8,9 @@ from sklearn.metrics import (
     recall_score
 )
 
-def ds_preprocessing_data(abandono_clientes, columns_to_drop):
+def ds_preprocessing_data(database_train, columns_to_drop):
     # Remove colunas que não serão utilizadas
-    df1 = abandono_clientes.drop(columns=columns_to_drop)
+    df1 = database_train.drop(columns=columns_to_drop)
 
     # Separando as variaveis independentes e dependentes
     y = df1['Exited']
